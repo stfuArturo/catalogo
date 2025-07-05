@@ -1,0 +1,137 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Body y tipografía */
+  body {
+    background-color: #e9f0fb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    padding: 1.8rem 1rem;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    user-select: none;
+  }
+  
+  /* Título */
+  header h1 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 2.4rem;
+    letter-spacing: 1.2px;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #2a5298;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.18);
+  }
+  
+  .navbar .navbar-brand {
+    color: #e1e9ff;
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+  
+  .navbar .navbar-brand:hover {
+    color: #f1f7ff;
+    text-decoration: none;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #d0d9ff;
+    font-weight: 600;
+    padding: 0.7rem 1.1rem;
+    transition: color 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+  
+  .navbar-nav .nav-link.active {
+    color: #fff;
+    background-color: #143d7a;
+    font-weight: 700;
+    box-shadow: 0 0 8px #143d7a;
+  }
+  
+  /* Carousel container */
+  .carousel {
+    max-width: 600px;
+    margin: 3rem auto 4rem;
+    padding-bottom: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  /* Carousel images */
+  .carousel-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Carousel control icons con fondo */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(42, 82, 152, 0.75);
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    filter: drop-shadow(0 0 3px rgba(0,0,0,0.4));
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel-control-prev-icon:hover,
+  .carousel-control-next-icon:hover {
+    background-color: rgba(42, 82, 152, 1);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1e3c72;
+    color: #cbd6f7;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.8px;
+    user-select: none;
+    box-shadow: inset 0 3px 8px rgba(255,255,255,0.12);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+    .carousel {
+      max-width: 90%;
+      margin: 2rem auto 3rem;
+    }
+    .carousel-item img {
+      height: 250px;
+    }
+    .navbar-nav .nav-link {
+      padding: 0.5rem 0.8rem;
+    }
+  }
+  
